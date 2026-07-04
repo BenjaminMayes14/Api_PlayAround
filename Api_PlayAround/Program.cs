@@ -1,10 +1,19 @@
-﻿namespace Api_PlayAround
+﻿using System.Runtime.CompilerServices;
+
+namespace Api_PlayAround
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
+
+            HttpClient client = new HttpClient();
+
+            string response = await client.GetStringAsync(
+                "https://jsonplaceholder.typicode.com/users/1"      );
+
+            Console.WriteLine(response);
         }
     }
 }
