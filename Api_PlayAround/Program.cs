@@ -10,3 +10,8 @@
 }
 
 /// app notes 
+/// add database 
+/// db = persons 
+/// fields = id and name
+/// <>
+/// add API for database
