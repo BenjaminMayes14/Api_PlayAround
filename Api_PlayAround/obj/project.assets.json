@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benja\\Documents\\New_Coding_Project$\\Api_PlayAround\\Api_PlayAround\\Api_PlayAround.csproj",
+      "projectUniqueName": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Api_PlayAround.csproj",
       "projectName": "Api_PlayAround",
-      "projectPath": "C:\\Users\\benja\\Documents\\New_Coding_Project$\\Api_PlayAround\\Api_PlayAround\\Api_PlayAround.csproj",
+      "projectPath": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Api_PlayAround.csproj",
       "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benja\\Documents\\New_Coding_Project$\\Api_PlayAround\\Api_PlayAround\\obj\\",
+      "outputPath": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
