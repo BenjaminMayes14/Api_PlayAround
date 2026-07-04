@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api_PlayAround")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+076604bb5fca3d6b786a84129a7286206547e517")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62da3ece87796a34e386ae7406835016101b2720")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api_PlayAround")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api_PlayAround")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

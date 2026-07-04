@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using System.Text.Json;
 
 namespace Api_PlayAround
 {
@@ -9,11 +10,42 @@ namespace Api_PlayAround
             Console.WriteLine("Hello, World!");
 
             HttpClient client = new HttpClient();
+            /*
+            client.DefaultRequestHeaders.Authorization =
+                new AuthenticationHeaderValue(
+                    "Bearer", apikey);
+            */
+            HttpResponseMessage response = await client.GetAsync(
+                "https://jsonplaceholder.typicode.com/users/1"  );
 
-            string response = await client.GetStringAsync(
-                "https://jsonplaceholder.typicode.com/users/1"      );
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Success");
+            }
+            else
+            {
+                Console.WriteLine(response.StatusCode);
+            }
 
-            Console.WriteLine(response);
+            string content = await response.Content.ReadAsStringAsync();
+
+            Person person = JsonSerializer.Deserialize<Person>(content);
+            Console.WriteLine(person.name + " " + person.email);
+
+            //===================================================================
+            /*
+            var user = new
+            {
+                name = "Ted"
+            };
+
+            string file = JsonSerializer.Serialize(user);
+
+            var content = 
+                new StringContent(file, Encoding.UTF8, "application/json");
+
+            await client.PostAsync(url, content);
+            */
         }
     }
 }
