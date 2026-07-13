@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{2E66BDEC-6057-E03F-628F-D042A04DF225}|Api_PlayAround\\Api_PlayAround.csproj|solutionrelative:api_playaround\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E66BDEC-6057-E03F-628F-D042A04DF225}|Api_PlayAround\\Api_PlayAround.csproj|c:\\users\\benja\\documents\\local_git_repos\\api_playaround\\api_playaround\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E66BDEC-6057-E03F-628F-D042A04DF225}|Api_PlayAround\\Api_PlayAround.csproj|solutionrelative:api_playaround\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E66BDEC-6057-E03F-628F-D042A04DF225}|Api_PlayAround\\Api_PlayAround.csproj|c:\\users\\benja\\documents\\local_git_repos\\api_playaround\\api_playaround\\api_playaround.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2E66BDEC-6057-E03F-628F-D042A04DF225}|Api_PlayAround\\Api_PlayAround.csproj|solutionrelative:api_playaround\\api_playaround.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E66BDEC-6057-E03F-628F-D042A04DF225}|Api_PlayAround\\Api_PlayAround.csproj|c:\\users\\benja\\documents\\local_git_repos\\api_playaround\\api_playaround\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E66BDEC-6057-E03F-628F-D042A04DF225}|Api_PlayAround\\Api_PlayAround.csproj|solutionrelative:api_playaround\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,23 +26,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 287,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Api_PlayAround",
+              "DocumentMoniker": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Api_PlayAround.csproj",
+              "RelativeDocumentMoniker": "Api_PlayAround\\Api_PlayAround.csproj",
+              "ToolTip": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Api_PlayAround.csproj",
+              "RelativeToolTip": "Api_PlayAround\\Api_PlayAround.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-13T10:29:57.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Person.cs",
-              "RelativeDocumentMoniker": "Api_PlayAround\\Person.cs",
-              "ToolTip": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Person.cs",
-              "RelativeToolTip": "Api_PlayAround\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-12T19:54:28.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Student.cs",
+              "RelativeDocumentMoniker": "Api_PlayAround\\Student.cs",
+              "ToolTip": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Student.cs",
+              "RelativeToolTip": "Api_PlayAround\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T13:51:36.162Z",
+              "WhenOpened": "2026-07-12T18:38:34.658Z",
               "EditorCaption": ""
             },
             {
@@ -45,7 +82,7 @@
               "RelativeDocumentMoniker": "Api_PlayAround\\Program.cs",
               "ToolTip": "C:\\Users\\benja\\Documents\\Local_Git_Repos\\Api_PlayAround\\Api_PlayAround\\Program.cs*",
               "RelativeToolTip": "Api_PlayAround\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-04T13:13:37.229Z",
               "EditorCaption": ""
