@@ -366,3 +366,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 Api_PlayAround/Properties/launchSettings.json
+Api_PlayAround/obj/Debug/net10.0/Api_PlayAround.AssemblyInfo.cs
+Api_PlayAround/obj/Debug/net10.0/Api_PlayAround.AssemblyInfoInputs.cache
