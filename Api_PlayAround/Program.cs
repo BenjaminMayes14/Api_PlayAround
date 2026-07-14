@@ -7,30 +7,43 @@ namespace Api_PlayAround
 {
     internal class Program
     {
-        static async Task Main(string[] args)
+        // create new action object
+        private static HttpClient client = new HttpClient();
+
+        private static async Task Main(string[] args)
         {
+            // create implicitly typed object 
+            var user = new
+            {
+                name = "Ted"
+            };
+
+            // convert to JSON file object
+            string jsonContent =
+                JsonSerializer.Serialize(user);
+
             //=================Beginning-Line=================================================
 
             Console.WriteLine("Hello, World!");
-
-            //=================GET-Command====================================================
-
-            // create new action object
-            HttpClient client = new HttpClient();
 
             // Add additional GitHub headers
             client.DefaultRequestHeaders.Add("User-Agent", "MyApp");
 
             // set authentication information for action
-            var token = 
-                Environment.GetEnvironmentVariable("GITHUB_TOKEN");
+            var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
             client.DefaultRequestHeaders.Authorization =
-                new AuthenticationHeaderValue(
-                    "Bearer", token);
+                new AuthenticationHeaderValue("Bearer", token);
 
+            await BasicGetAsync("https://api.github.com/user");
+
+            await BasicPostAsync(jsonContent, "https://jsonplaceholder.typicode.com/users");
+        }
+
+        private static async Task BasicGetAsync(string url)
+        {
             // run GET using action
-            HttpResponseMessage response = await client.GetAsync(
-                "https://api.github.com/user");
+            HttpResponseMessage response = 
+                await client.GetAsync(url);
 
             // check if GET action was successful 
             if (response.IsSuccessStatusCode)
@@ -44,47 +57,50 @@ namespace Api_PlayAround
 
             // convert response to JSON
             string content = await response.Content.ReadAsStringAsync();
-            // Console.WriteLine($"\n\ncontent\n\n{content}\n");
 
             // convert JSON to local class object 
             Student? person = JsonSerializer.Deserialize<Student>(content);
-            // Person? person = JsonSerializer.Deserialize<Person>(content);
-            if (person == null) 
-                person = new Student()  ;
+            if (person == null)
+                person = new Student();
             Console.WriteLine(
-                $"{person.login}\n{person.email}\n{person.bio}"  );
+                $"{person.login}\n{person.email}\n{person.bio}");
+        }
 
-            //=================POST-Command===================================================
-
-            // create implicitly typed object 
-            var user = new
-            {
-                name = "Ted"
-            };
-
+        private static async Task BasicPostAsync(string user, string url)
+        {
             // convert to JSON file object
-            string jsonContent = 
-                JsonSerializer.Serialize(user);
-            var json = 
+            var json =
                 new StringContent(
-                    jsonContent, 
+                    user,
                     Encoding.UTF8,
-                    "application/json"  );
+                    "application/json");
 
             // run POST using action 
-            var satusResponse = 
-                await client.PostAsync("https://jsonplaceholder.typicode.com/users", json);
+            var statusResponse =
+                await client.PostAsync(url, json);
 
             // check if POST action was successful 
-            if (response.IsSuccessStatusCode)
+            if (statusResponse.IsSuccessStatusCode)
             {
                 Console.WriteLine("Success");
             }
             else
             {
-                Console.WriteLine(response.StatusCode);
+                Console.WriteLine(statusResponse.StatusCode);
             }
         }
+
+        private static async Task ServerGet()
+        { }
+
+        private static async Task ServerPost()
+        { }
+
+        private static async Task ServerPut()
+        { }
+
+        private static async Task ServerDelete()
+        { }
     }
 }
 
